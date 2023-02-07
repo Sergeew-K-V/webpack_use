@@ -2,6 +2,8 @@ const path = require("path");
 const HtmlWebpackPlugin = require("html-webpack-plugin");
 
 module.exports = {
+  mode: "development",
+  devtool: "inline-source-map",
   entry: { index: "./src/index.js", print: "./src/print.js" },
   output: {
     filename: "[name].bundle.js",
@@ -10,9 +12,15 @@ module.exports = {
   },
   plugins: [
     new HtmlWebpackPlugin({
-      title: "Output Management",
+      title: "Development",
     }),
   ],
+  devServer: {
+    static: "./dist",
+  },
+  optimization: {
+    runtimeChunk: "single",
+  },
   module: {
     rules: [
       {
