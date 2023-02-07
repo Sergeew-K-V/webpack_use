@@ -2,7 +2,7 @@
   "name": "webpack_use",
   "version": "1.0.0",
   "description": "",
-  "main": "index.js",
+  "main": "./src/index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "build": "webpack"
@@ -11,12 +11,15 @@
   "license": "ISC",
   "devDependencies": {
     "css-loader": "^6.7.3",
+    "csv-loader": "^3.0.5",
     "lodash": "^4.17.21",
     "style-loader": "^3.3.1",
     "webpack": "^5.75.0",
-    "webpack-cli": "^5.0.1"
+    "webpack-cli": "^5.0.1",
+    "xml-loader": "^1.2.1"
   },
   "dependencies": {
     "sass": "^1.58.0"
   }
 }
+
