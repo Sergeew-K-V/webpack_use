@@ -1,8 +1,8 @@
 import _ from "lodash";
 import "./style.css";
-import Icon from "./public/images/icon.jpeg";
-import dataXML from "./public/data/data.xml";
-import dataCSV from "./public/data/data.csv";
+import Icon from "../public/images/icon.jpeg";
+import dataXML from "../public/data/data.xml";
+import dataCSV from "../public/data/data.csv";
 import printMe from "./print.js";
 
 function component() {
