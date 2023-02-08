@@ -9,4 +9,5 @@
   color: green;
   font-family: "MyFont";
   background: url("../public/images/icon.jpeg");
+  background-repeat: no-repeat;
 }
